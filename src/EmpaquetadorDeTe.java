@@ -40,5 +40,8 @@ public class EmpaquetadorDeTe {
         System.out.println("Este paquete consta de " + paquete2.getContenido() + " unidades");
         System.out.println("Este paquete consta de " + envioAsia.getContenido() + " unidades");
         System.out.println("El envío a Asia contiene " + envioAsia.getContenido() + " unidades de té");
+        Mensajes notificacionPaquete = new MensajeTexto(envioAsia);
+        notificacionPaquete.notificar();
+
     }
 }
